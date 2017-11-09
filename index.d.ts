@@ -2,49 +2,7 @@
 // Project: LightDM
 // Definitions by: Ole Martin Ruud <https://github.com/olemartinruud>
 
-/**
- * Global instantiated object containing the Greeter.
- * @type {object}
- * @readonly
- */
-declare const lightdm: LightDM.Greeter
-
-/**
-  * ***Deprecated!*** Use {@link greeter_config} instead
-  * Global instance of GreeterConfig instantiated by the greeter.
-  * Contains values from the config file at `/etc/lightdm/lightdm-webkit2-greeter.conf`
-  * @deprecated
-  * @type {object}
-  * @readonly
-  */
-declare const config: LightDM.GreeterConfig
-
-/**
- * Global instance of GreeterConfig instantiated by the greeter.
- * Contains values from the config file at `/etc/lightdm/lightdm-webkit2-greeter.conf`
- * @type {object}
- * @readonly
- */
-declare const greeter_config: LightDM.GreeterConfig
-
-/**
- * Global instance of ThemeUtils instantiated by the greeter
- * @type {object}
- * @readonly
- */
-declare const theme_utils: LightDM.ThemeUtils
-
-/**
-  * ***Deprecated!*** Use {@link theme_utils} instead
-  * Global instance of ThemeUtils instantiated by the greeter
-  * @deprecated
-  * @type {object}
-  * @readonly
-  */
-declare const greeterutil: LightDM.ThemeUtils
-
-
-declare namespace LightDM {
+export namespace LightDM {
 
   /**
    * Base class for the greeter's Theme JavaScript API. Greeter themes will interact
@@ -603,3 +561,44 @@ declare namespace LightDM {
     txt2html(text: string): string;
   }
 }
+
+/**
+ * Global instantiated object containing the Greeter.
+ * @type {object}
+ * @readonly
+ */
+export const lightdm: LightDM.Greeter
+
+/**
+  * ***Deprecated!*** Use {@link greeter_config} instead
+  * Global instance of GreeterConfig instantiated by the greeter.
+  * Contains values from the config file at `/etc/lightdm/lightdm-webkit2-greeter.conf`
+  * @deprecated
+  * @type {object}
+  * @readonly
+  */
+export const config: LightDM.GreeterConfig
+
+/**
+ * Global instance of GreeterConfig instantiated by the greeter.
+ * Contains values from the config file at `/etc/lightdm/lightdm-webkit2-greeter.conf`
+ * @type {object}
+ * @readonly
+ */
+export const greeter_config: LightDM.GreeterConfig
+
+/**
+ * Global instance of ThemeUtils instantiated by the greeter
+ * @type {object}
+ * @readonly
+ */
+export const theme_utils: LightDM.ThemeUtils
+
+/**
+  * ***Deprecated!*** Use {@link theme_utils} instead
+  * Global instance of ThemeUtils instantiated by the greeter
+  * @deprecated
+  * @type {object}
+  * @readonly
+  */
+export const greeterutil: LightDM.ThemeUtils

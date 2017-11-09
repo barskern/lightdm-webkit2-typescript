@@ -1,13 +1,13 @@
 {
   "name": "lightdm-webkit2-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A packaged that adds typescript definitions for the [lightdm-webkit2 API](https://github.com/Antergos/web-greeter) ",
   "repository": "https://github.com/olemartinruud/lightdm-webkit2-typescript.git",
   "dependencies": {
-    "typescript": "next",
     "@types/jquery": "^3.2.16",
     "@types/js-cookie": "^2.1.0",
-    "@types/moment": "^2.13.0"
+    "@types/moment": "^2.13.0",
+    "typescript": "^2.7.0-dev.20171109"
   },
   "main": "",
   "types": "./index.d.ts",
