@@ -47,10 +47,4 @@
    */
   let autologin_timer_expired = (username: string): void => {}
 
-  $(document).ready(_ => {
-    $('.user').click((e): void => {
-
-    })
-    $('.instance--input').on('change', start_authentication)
-  })
 })()

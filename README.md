@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/webkit2--version-v2.2.5-blue.svg?style=flat-square)
 ![](https://img.shields.io/badge/build-working-green.svg?style=flat-square)
 
-This package delivers typescript definitions for [lightdm-webkit2](https://github.com/Antergos/web-greeter)'s javascript [API](https://doclets.io/Antergos/web-greeter/stable). The intention is to make developing themes for [lightdm-webkit2](https://github.com/Antergos/web-greeter) a breeze with included type specifications and helpers with linting.
+This package delivers typescript definitions for [lightdm-webkit2](https://github.com/Antergos/web-greeter)'s javascript [API](https://doclets.io/Antergos/web-greeter/stable). The intention is to make developing themes for [lightdm-webkit2](https://github.com/Antergos/web-greeter) a breeze with included type specifications and helpers with linting. This package does not include any other definitions than those given by the lightdm-webkit2 library, hence if you want _jquery_ (`@types/jquery`), _moment.js_(`@types/moment`) or _Cookie_(`@types/js-cookie`), you have to include those type-definitions yourself. 
 
 ## Installation
 
