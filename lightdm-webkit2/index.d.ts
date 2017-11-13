@@ -2,7 +2,7 @@
 // Project: LightDM
 // Definitions by: Ole Martin Ruud <https://github.com/olemartinruud>
 
-export namespace LightDM {
+declare namespace LightDM {
 
   /**
    * Base class for the greeter's Theme JavaScript API. Greeter themes will interact
@@ -567,7 +567,7 @@ export namespace LightDM {
  * @type {object}
  * @readonly
  */
-export const lightdm: LightDM.Greeter
+declare const lightdm: LightDM.Greeter
 
 /**
   * ***Deprecated!*** Use {@link greeter_config} instead
@@ -577,7 +577,7 @@ export const lightdm: LightDM.Greeter
   * @type {object}
   * @readonly
   */
-export const config: LightDM.GreeterConfig
+declare const config: LightDM.GreeterConfig
 
 /**
  * Global instance of GreeterConfig instantiated by the greeter.
@@ -585,14 +585,14 @@ export const config: LightDM.GreeterConfig
  * @type {object}
  * @readonly
  */
-export const greeter_config: LightDM.GreeterConfig
+declare const greeter_config: LightDM.GreeterConfig
 
 /**
  * Global instance of ThemeUtils instantiated by the greeter
  * @type {object}
  * @readonly
  */
-export const theme_utils: LightDM.ThemeUtils
+declare const theme_utils: LightDM.ThemeUtils
 
 /**
   * ***Deprecated!*** Use {@link theme_utils} instead
@@ -601,4 +601,4 @@ export const theme_utils: LightDM.ThemeUtils
   * @type {object}
   * @readonly
   */
-export const greeterutil: LightDM.ThemeUtils
+declare const greeterutil: LightDM.ThemeUtils

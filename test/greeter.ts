@@ -30,7 +30,6 @@
 	let authentication_complete = (): void => {
 		if (lightdm.is_authenticated) {
       lightdm.start_session_sync(_selected.session);
-
 		} else {
 			show_message("Authentication Failed", "error");
 			setTimeout(start_authentication, 3000);
