@@ -1,6 +1,6 @@
 {
   "name": "lightdm-webkit2-typescript",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Typescript definitions for the lightdm-webkit2 javascript API",
   "repository": "https://github.com/olemartinruud/lightdm-webkit2-typescript.git",
   "dependencies": {
@@ -18,7 +18,7 @@
     "javascript"
   ],
   "main": "",
-  "types": "./index.d.ts",
+  "types": "./lightdm-webkit2/index.d.ts",
   "author": "Ole Martin Ruud",
   "license": "MIT"
 }
