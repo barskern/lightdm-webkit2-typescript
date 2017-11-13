@@ -1,5 +1,8 @@
 # Typescript definitions for [lightdm-webkit2](https://github.com/Antergos/web-greeter)
 
+![](https://img.shields.io/badge/webkit2--version-v2.2.5-blue.svg?style=flat-square)
+![](https://img.shields.io/badge/build-working-green.svg?style=flat-square)
+
 This package delivers typescript definitions for [lightdm-webkit2](https://github.com/Antergos/web-greeter)'s javascript [API](https://doclets.io/Antergos/web-greeter/stable). The intention is to make developing themes for [lightdm-webkit2](https://github.com/Antergos/web-greeter) a breeze with included type specifications and helpers with linting.
 
 ## Installation
@@ -15,7 +18,13 @@ One example for a `tsconfig.json` that will work well for lightdm-webkit2 develo
     "lib": [
       "DOM",
       "ES2015",
+      "ES2016",
+      "ES2017",
       "ES2015.Iterable"
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/lightdm-webkit2-typescript"
     ],
     "outFile": "./greeter.js"
   },
@@ -23,14 +32,15 @@ One example for a `tsconfig.json` that will work well for lightdm-webkit2 develo
     "./**/*.ts"
   ],
   "exclude": [
-    "./node_modules",
-    "./**/*.spec.ts"
+    "node_modules",
+    "**/*.spec.ts"
   ]
 }
 ```
 
-In the config above the important parts to notice are `outFile` and `include`.
+In the config above the important part to notice is `typeRoots`, which has to be defined with the path to this node module.
 
+- `typeRoots` defines the files that will compiled as `.d.ts`-library files.
 - `outFile` defines the file that will be the result of the _typescript_-compilation.
 - `include` defines the files that will be compiled to the results (_currently a glob which specifies all .ts files in project directory_)
 
