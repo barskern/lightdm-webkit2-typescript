@@ -23,7 +23,7 @@ One example for a `tsconfig.json` that will work well for lightdm-webkit2 develo
     "./**/*.ts"
   ],
   "exclude": [
-    "./de_modules",
+    "./node_modules",
     "./**/*.spec.ts"
   ]
 }
