@@ -16,10 +16,10 @@ declare namespace LightDM {
     /**
      * The username of the user being authenticated or {@link null}
      * if there is no authentication in progress.
-     * @type {string|null}
+     * @type {string | null}
      * @readonly
      */
-    authentication_user: string|null;
+    authentication_user: string | null;
 
     /**
      * Whether or not the guest account should be automatically logged
@@ -172,10 +172,10 @@ declare namespace LightDM {
     /**
      * Starts the authentication procedure for a user.
      *
-     * @arg {String|null} username A username or {@link null} to prompt for a username.
+     * @arg {String | null} username A username or {@link null} to prompt for a username.
      * @param username
      */
-    authenticate(username: string|null): void;
+    authenticate(username: string | null): void;
 
     /**
      * Starts the authentication procedure for the guest user.
@@ -195,11 +195,11 @@ declare namespace LightDM {
     /**
      * Get the value of a hint.
      * @arg {string} name The name of the hint to get.
-     * @returns {string|boolean|number|null}
+     * @returns {string | boolean | number | null}
      * @param name
      * @return
      */
-    get_hint(name: string|boolean|number|null): any;
+    get_hint(name: string | boolean | number | null): any;
 
     /**
      * Triggers the system to hibernate.
@@ -240,12 +240,12 @@ declare namespace LightDM {
 
     /**
      * Start a session for the authenticated user.
-     * @arg {LightDM.Session|null} session The session to log into or {@link null} to use the default.
+     * @arg {LightDM.Session | null} session The session to log into or {@link null} to use the default.
      * @returns {boolean} Returns {@link true} if successful, otherwise {@link false}
      * @param session
      * @return
      */
-    start_session_sync(session: LightDM.Session|null): boolean;
+    start_session_sync(session: LightDM.Session | null): boolean;
 
     /**
      * Triggers the system to suspend/sleep.
@@ -469,10 +469,10 @@ declare namespace LightDM {
 
   	/**
   	 * The last session that the user logged into.
-  	 * @type {string|null}
+  	 * @type {string | null}
   	 * @readonly
   	 */
-    session: string|null;
+    session: string | null;
 
   	/**
   	 * ***Deprecated!*** See {@link LightDM.User#username}.
