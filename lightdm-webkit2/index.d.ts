@@ -19,7 +19,7 @@ declare namespace LightDM {
      * @type {string|null}
      * @readonly
      */
-    authentication_user: string;
+    authentication_user: string|null;
 
     /**
      * Whether or not the guest account should be automatically logged
@@ -175,7 +175,7 @@ declare namespace LightDM {
      * @arg {String|null} username A username or {@link null} to prompt for a username.
      * @param username
      */
-    authenticate(username: string): void;
+    authenticate(username: string|null): void;
 
     /**
      * Starts the authentication procedure for the guest user.
@@ -199,7 +199,7 @@ declare namespace LightDM {
      * @param name
      * @return
      */
-    get_hint(name: string): any;
+    get_hint(name: string|boolean|number|null): any;
 
     /**
      * Triggers the system to hibernate.
@@ -245,7 +245,7 @@ declare namespace LightDM {
      * @param session
      * @return
      */
-    start_session_sync(session: LightDM.Session): boolean;
+    start_session_sync(session: LightDM.Session|null): boolean;
 
     /**
      * Triggers the system to suspend/sleep.
@@ -472,7 +472,7 @@ declare namespace LightDM {
   	 * @type {string|null}
   	 * @readonly
   	 */
-    session: string;
+    session: string|null;
 
   	/**
   	 * ***Deprecated!*** See {@link LightDM.User#username}.
