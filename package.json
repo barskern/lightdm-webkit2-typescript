@@ -2,7 +2,7 @@
   "name": "lightdm-webkit2-typescript",
   "version": "2.0.5",
   "description": "Typescript definitions for the lightdm-webkit2 javascript API",
-  "repository": "https://github.com/olemartinruud/lightdm-webkit2-typescript.git",
+  "repository": "https://github.com/barskern/lightdm-webkit2-typescript.git",
   "keywords": [
     "typescript",
     "lightdm",
@@ -13,6 +13,6 @@
   ],
   "main": "",
   "types": "./lightdm-webkit2/index.d.ts",
-  "author": "Ole Martin Ruud",
+  "author": "Ole Martin Ruud <barskern@outlook.com>",
   "license": "MIT"
 }

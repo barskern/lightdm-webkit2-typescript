@@ -1,6 +1,6 @@
 // Type definitions for lightdm-webkit2-greeter from [WebGreeter](https://github.com/Antergos/web-greeter)
 // Project: LightDM
-// Definitions by: Ole Martin Ruud <https://github.com/olemartinruud>
+// Definitions by: Ole Martin Ruud <https://github.com/barskern>
 
 declare namespace LightDM {
 
