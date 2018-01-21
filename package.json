@@ -1,6 +1,6 @@
 {
   "name": "lightdm-webkit2-typescript",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Typescript definitions for the lightdm-webkit2 javascript API",
   "repository": "https://github.com/barskern/lightdm-webkit2-typescript.git",
   "keywords": [
